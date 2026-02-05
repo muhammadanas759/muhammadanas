@@ -67,13 +67,13 @@ export function Hero() {
             </motion.h1>
 
             {/* Tagline */}
-            <motion.p
+            {/* <motion.p
               variants={item}
               transition={{ duration: 0.5 }}
               className="hero-tagline mb-6 text-[clamp(1.25rem,3vw,1.75rem)] font-semibold text-[var(--text-secondary)]"
             >
               {tagline}
-            </motion.p>
+            </motion.p> */}
 
             {/* Description */}
             <motion.p
@@ -81,7 +81,10 @@ export function Hero() {
               transition={{ duration: 0.5 }}
               className="hero-desc mb-8 max-w-[520px] self-center text-[1.1rem] leading-[1.8] text-[var(--text-secondary)] lg:self-start"
             >
-              I build <strong className="text-[var(--text-primary)]">beautiful, high-performance</strong> mobile apps that users love. Specialized in <span className="highlight">Fintech</span> & <span className="highlight">Healthcare</span> with 5+ years of experience crafting solutions with Kotlin, Jetpack Compose & Flutter.
+              I build <strong className="text-[var(--text-primary)]">beautiful, high-performance</strong> mobile apps that users love. Specialized in
+              <span className="highlight"> Ed-Tech</span>,
+              <span className="highlight"> Delivery</span>,
+              <span className="highlight"> Fintech</span> & <span className="highlight">Healthcare</span> with 6+ years of experience crafting solutions with Kotlin, Jetpack Compose & Flutter.
             </motion.p>
 
             {/* CTA Buttons */}
@@ -119,7 +122,7 @@ export function Hero() {
                 <span className="stat-label text-[0.85rem] text-[#6b7280]">Years Exp.</span>
               </div>
               <div className="stat text-center">
-                <span className="stat-value block text-[2rem] font-extrabold">10+</span>
+                <span className="stat-value block text-[2rem] font-extrabold">12+</span>
                 <span className="stat-label text-[0.85rem] text-[#6b7280]">Apps Built</span>
               </div>
               <div className="stat text-center">

@@ -1,6 +1,6 @@
 export const portfolioData = {
   name: "Muhammad Anas Qamar",
-  tagline: "Engineering @ VentureDive | Building Scalable Mobile Applications",
+  tagline: "Engineering @ VentureDive",
   contact: {
     email: "anasmuhammad759@gmail.com",
     phone: "(+92) 331-3867853",

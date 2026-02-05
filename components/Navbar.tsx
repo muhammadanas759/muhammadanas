@@ -40,7 +40,7 @@ export function Navbar() {
             href="#hero"
             className="text-lg font-bold gradient-text"
           >
-            Anas
+            MAQ
           </a>
 
           <div className="hidden items-center gap-8 md:flex">
