@@ -162,6 +162,33 @@ export const portfolioData = {
   ],
   projects: [
     {
+      name: "Pets Hero",
+      description:
+        "Social Media, E-Commerce and Consultant App for Pet Lovers. Built a cross-platform pet care app from scratch with vet consultations, real-time chat (Socket.IO), e-shop with secure payments, Google Maps order tracking, pet services booking (sitting, grooming, cleaning), and event/meetup features.",
+      tech: [
+        "Flutter",
+        "Firebase",
+        "Google Maps",
+        "Stripe",
+        "Socket.IO",
+        "REST APIs",
+        "Clean Architecture",
+        "Background Task",
+      ],
+      link: "https://play.google.com/store/apps/details?id=com.petshero.customer",
+      links: [
+        { label: "Customer App", url: "https://play.google.com/store/apps/details?id=com.petshero.customer" },
+        { label: "Vendor App", url: "https://play.google.com/store/apps/details?id=com.petshero.vendor" },
+      ],
+      screenshots: [
+        "/projects/pets-hero/1.png",
+        "/projects/pets-hero/2.png",
+        "/projects/pets-hero/3.png",
+        "/projects/pets-hero/4.png",
+        "/projects/pets-hero/5.png",
+      ],
+    },
+    {
       name: "Reverie Global",
       description:
         "Next-Level Platform for Fun Activities and Making It Profitable. Reverie supports the extracurricular and sporting activities of talented and skilled people. Encouraging people to participate allows them to be chosen by professional scouts.",
@@ -178,6 +205,7 @@ export const portfolioData = {
         "CI/CD",
       ],
       link: "https://play.google.com/store/apps/details?id=com.datanet.reverie&hl=en",
+      screenshots: ["/projects/reverie/1.png"],
     },
     {
       name: "Islam & Quran Learning Academy (Athan Academy)",
@@ -217,6 +245,7 @@ export const portfolioData = {
         "CI/CD",
       ],
       link: "https://play.google.com/store/apps/details?id=com.athan&hl=en_US",
+      screenshots: ["/projects/athan/1.png"],
     },
   ],
   education: [
