@@ -9,6 +9,41 @@ export const portfolioData = {
   },
   about:
     "Experienced mobile app developer with 5+ years of expertise in Android Native and Flutter app development. Skilled in Kotlin, Java, and Flutter, I have successfully delivered robust, user-friendly applications. Committed to writing high-quality code and following best practices, I strive to create clean, maintainable, and scalable solutions. Passionate about problem-solving and delivering intuitive experiences, I'm eager to collaborate on impactful mobile app projects. Let's connect and bring your ideas to life!",
+  introVideoSrc: "/videos/intro.mp4",
+  heroApps: [
+    {
+      name: "Athan Academy",
+      iconSrc: "/hero-apps/academy.png",
+      storeUrl:
+        "https://play.google.com/store/apps/details?id=com.islamicfinder.alif&hl=en&gl=US",
+    },
+    {
+      name: "Pets Hero",
+      iconSrc: "/hero-apps/pets-hero.png",
+      storeUrl: "https://play.google.com/store/apps/details?id=com.petshero.customer",
+    },
+    {
+      name: "Athan",
+      iconSrc: "/hero-apps/athan.png",
+      storeUrl: "https://play.google.com/store/apps/details?id=com.athan&hl=en_US",
+    },
+    {
+      name: "Pets Hero Pro",
+      iconSrc: "/hero-apps/pets-hero-pro.png",
+      storeUrl: "https://play.google.com/store/apps/details?id=com.petshero.vendor",
+    },
+    {
+      name: "Reverie Global",
+      iconSrc: "/hero-apps/reverie.png",
+      storeUrl: "https://play.google.com/store/apps/details?id=com.datanet.reverie&hl=en",
+    },
+    {
+      name: "Lbaih",
+      iconSrc: "/hero-apps/lbaih.png",
+      storeUrl:
+        "https://play.google.com/store/apps/details?id=qa.hamad.patientapp&hl=en_US",
+    },
+  ],
   topSkills: [
     "Android Development",
     "Mobile App Development",

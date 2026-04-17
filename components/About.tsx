@@ -18,6 +18,19 @@ export function About() {
         <p className="text-lg leading-relaxed text-[var(--text-secondary)] [&>strong]:text-[var(--text-primary)]">
           {portfolioData.about}
         </p>
+        {portfolioData.introVideoSrc ? (
+          <div className="mt-8 overflow-hidden rounded-xl border border-[var(--border-color)] bg-black shadow-lg">
+            <video
+              className="mx-auto aspect-video w-full max-h-[min(70vh,560px)] object-contain"
+              controls
+              playsInline
+              preload="metadata"
+              aria-label="Introduction video"
+            >
+              <source src={portfolioData.introVideoSrc} type="video/mp4" />
+            </video>
+          </div>
+        ) : null}
         <div className="mt-6 inline-flex items-center gap-2 rounded-full border border-[var(--border-color)] bg-[var(--bg-card-hover)] px-4 py-2">
           <MapPin className="h-4 w-4 text-[var(--accent-pink)]" />
           <span className="text-sm font-medium text-[var(--text-secondary)]">

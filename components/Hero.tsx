@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { portfolioData } from "@/lib/portfolio-data";
@@ -19,7 +20,7 @@ const item = {
 };
 
 export function Hero() {
-  const { name, tagline } = portfolioData;
+  const { name, heroApps } = portfolioData;
   const firstName = name.split(" ")[1] || name; // "Anas"
 
   return (
@@ -140,25 +141,32 @@ export function Hero() {
           className="hero-visual hidden items-center justify-center lg:flex"
         >
           <div className="phone-mockup animate-float">
-            <div className="phone-screen">
-              <div
-                className="app-icon h-16 w-16 rounded-2xl"
-                style={{
-                  background: "linear-gradient(135deg, #7c3aed, #c084fc)",
-                }}
-              />
-              <div
-                className="app-icon h-16 w-16 rounded-2xl"
-                style={{
-                  background: "linear-gradient(135deg, #4ade80, #22d3ee)",
-                }}
-              />
-              <div
-                className="app-icon h-16 w-16 rounded-2xl"
-                style={{
-                  background: "linear-gradient(135deg, #60a5fa, #3b82f6)",
-                }}
-              />
+            <div className="phone-screen !grid grid-cols-3 place-content-start gap-x-2 gap-y-4 px-3 pb-5 pt-4">
+              {heroApps.map((app) => (
+                <a
+                  key={app.name}
+                  href={app.storeUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex flex-col items-center gap-1.5 no-underline transition-transform duration-200 hover:scale-[1.03] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8b5cf6] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1e1e2e] rounded-lg"
+                  aria-label={`${app.name} on Google Play`}
+                >
+      
+                  <span className="relative block h-14 w-14 shrink-0 overflow-hidden rounded-2xl shadow-md ring-1 ring-white/10 transition-[box-shadow,transform] group-hover:ring-[#c084fc]/50">
+                    <Image
+                      src={app.iconSrc}
+                      alt=""
+                      width={56}
+                      height={56}
+                      className="h-full w-full object-cover"
+                      sizes="56px"
+                    />
+                  </span>
+                       <span className="line-clamp-2 min-h-[2rem] max-w-[4.5rem] text-center text-[0.65rem] font-semibold leading-tight text-white/85 transition-colors group-hover:text-white">
+                    {app.name}
+                  </span>
+                </a>
+              ))}
             </div>
           </div>
         </motion.div>
