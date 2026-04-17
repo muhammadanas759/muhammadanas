@@ -22,7 +22,7 @@ const contactLinks = [
     href: portfolioData.contact.linkedin,
     icon: Linkedin,
     label: "LinkedIn",
-    value: "linkedin.com/in/manas",
+    value: "linkedin.com/in/muhammad-anas-180169154",
   },
 ];
 

@@ -4,7 +4,7 @@ export const portfolioData = {
   contact: {
     email: "anasmuhammad759@gmail.com",
     phone: "(+92) 331-3867853",
-    linkedin: "https://linkedin.com/in/manas",
+    linkedin: "https://linkedin.com/in/muhammad-anas-180169154/",
     whatsapp: "https://wa.me/+923313867853",
   },
   about:
